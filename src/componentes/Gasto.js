@@ -2,8 +2,15 @@ import React, {Component} from 'react';
 
 class Gasto extends Component{
     render(){
+        const {cantidadGasto, nombreGasto} = this.props.gasto;
+      
         return(
-        <p>Desde gasto.js</p>
+            <li className="gastos">
+                <p>
+                    {nombreGasto}
+                    <span className="gasto"> $ {cantidadGasto}</span>
+                </p>
+            </li>
         )
     }
 }
