@@ -4,8 +4,10 @@ class Restante extends Component
 {
     render(){
         return(
-            <p>Desde restante</p>
-        );
+            <div className="alert alert-success">
+            <p>Restante: ${this.props.restante}</p>
+            </div>        
+            );
     }
 }
 
