@@ -60,10 +60,9 @@ class App extends Component {
     let restante = this.state.restante;
 
     //lo restamos
-    let totalResta = restante - restar;
-
+    let totalRestante = restante - restar;
     //agregamos para actualizar al state con el nuevo dato
-    this.setState(restante= totalResta);
+    this.setState({restante: totalRestante});
   }
 
   render() {
